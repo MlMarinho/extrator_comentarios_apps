@@ -1,4 +1,4 @@
-Pillow
+Pillow==8.0.1 --no-binary :all:
 streamlit
 pandas
 matplotlib
