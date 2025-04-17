@@ -6,9 +6,6 @@ echo "Atualizando e instalando dependências..."
 # Atualizar o pip
 python3 -m pip install --upgrade pip
 
-sudo apt-get update
-sudo apt-get install -y libjpeg8-dev zlib1g-dev
-
 # Instalar as bibliotecas necessárias
 pip install -r requirements.txt
 
