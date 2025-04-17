@@ -67,6 +67,7 @@ def coletar_appstore(app_id, data_inicio, data_fim):
 url = st.text_input("Insira a URL do aplicativo")
 data_inicio = st.date_input("Data início", value=datetime(2024, 1, 1))
 data_fim = st.date_input("Data fim", value=datetime.now().date())
+palavra_chave = st.text_input("Buscar por palavra-chave nos comentários (Opcional)")
 
 buscar = st.button("🔍 Buscar Comentários")
 
@@ -81,7 +82,9 @@ if buscar and url:
     else:
         st.error("URL inválida.")
         df = None
-
+    if palavra_chave:
+        df = df[df['comentario'].str.contains(palavra_chave, case=False, na=False)]
+        
     if df is not None and not df.empty:
         st.success(f"{len(df)} comentários extraídos com sucesso!")
 
