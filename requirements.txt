@@ -1,11 +1,6 @@
 streamlit
-pandas
-numpy
-plotly
-seaborn
-wordcloud
-nltk
-xlsxwriter
-pillow
 google-play-scraper
-app-store-scraper-python
+app-store-scraper
+plotly
+openpyxl
+pandas
