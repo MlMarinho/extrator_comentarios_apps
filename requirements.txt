@@ -8,4 +8,4 @@ textblob==0.17.1
 xlsxwriter==3.1.9
 google-play-scraper==1.2.6
 app-store-scraper==0.3.5
-pillow==9.5.0
+pillow==9.4.0
